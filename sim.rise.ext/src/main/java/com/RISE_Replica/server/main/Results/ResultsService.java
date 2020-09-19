@@ -290,7 +290,7 @@ public class ResultsService {
 	            	   // return entries;
 	    			System.out.println(input);
 	            	System.out.println( results.getString(3) );
-	            	System.out.println( results.getString(4)  );
+	            	System.out.println( results.getString(4) );
 	            	System.out.println( results.getString(5)  );
 
 	            	System.out.println( results.getString(7) );
