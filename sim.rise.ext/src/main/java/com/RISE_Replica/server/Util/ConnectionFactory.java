@@ -9,9 +9,9 @@ public class ConnectionFactory {
 	private static ConnectionFactory instance = new ConnectionFactory();
 
 	public static final String DRIVER_CLASS = "org.postgresql.Driver";
-	public static final String URL = "jdbc:postgresql://127.0.0.1:5432/Rise";
-	public static final String USER = "shreyataneja";
-	public static final String PASSWORD = "9467";
+	public static final String URL = "jdbc:postgresql://ec2-100-25-4-105.compute-1.amazonaws.com:5433/Rise";
+	public static final String USER = "bruno";
+	public static final String PASSWORD = "bruno";
 	
 	// private constructor
 	private ConnectionFactory() {
