@@ -1,9 +1,9 @@
 package com.RISE_Replica.server.main.simulationResource;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
+
 import java.io.IOException;
-import java.io.InputStream;
+
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -11,23 +11,13 @@ import java.net.HttpURLConnection;
 
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Vector;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 
 import org.apache.tomcat.util.codec.binary.Base64;
 import org.json.JSONObject;
 import org.json.XML;
 import org.springframework.stereotype.Component;
 
-import com.RISE_Replica.server.Util.ConnectionFactory;
-import com.RISE_Replica.server.Util.DbUtil;
+
 import com.github.underscore.lodash.U;
 
 @Component
