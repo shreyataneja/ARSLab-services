@@ -11,7 +11,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import com.github.underscore.lodash.U;
 
@@ -43,7 +42,7 @@ import com.RISE_Replica.server.Util.DbUtil;
 @Component
 public class FrameworkService {
 	
-	private PreparedStatement preparedStatment;
+	
 	
 	public JSONObject getFramework(String username, String servicetype, String framework) throws IOException {
 		 String URL =  "http://vs1.sce.carleton.ca:8080/cdpp/sim/workspaces" ;
@@ -170,7 +169,7 @@ public class FrameworkService {
 	JSONObject serverObj = new JSONObject();
 	JSONObject serverObj2 = new JSONObject();
 	JSONObject serverObj3 = new JSONObject();
-	JSONObject confObj = new JSONObject();
+	
 	
 	JSONObject json = new JSONObject();
 	fileObj.put("File", ja);

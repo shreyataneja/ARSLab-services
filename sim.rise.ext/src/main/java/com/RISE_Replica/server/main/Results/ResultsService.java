@@ -1,6 +1,5 @@
 package com.RISE_Replica.server.main.Results;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -38,7 +37,7 @@ public class ResultsService {
 	 * Simulation Results -  Get & Delete
 	 */
 	public InputStream getSimResults(String username, String servicetype, String framework)  throws IOException {
-		 Connection connection = ConnectionFactory.getConnection();
+		
 		 String URL =  "http://vs1.sce.carleton.ca:8080/cdpp/sim/workspaces" ;
 		 	URL = URL.concat("/");
 			URL = URL.concat(username);
@@ -144,7 +143,7 @@ public class ResultsService {
 	 */
 	
 	public InputStream getDebugResults(String username, String servicetype, String framework)  throws IOException {
-		 Connection connection = ConnectionFactory.getConnection();
+		
 		 String URL =  "http://vs1.sce.carleton.ca:8080/cdpp/sim/workspaces" ;
 		 	URL = URL.concat("/");
 			URL = URL.concat(username);
@@ -249,8 +248,8 @@ public class ResultsService {
 	public String getAllInfo(String username, String servicetype, String framework) throws IOException {
 		 Connection connection = ConnectionFactory.getConnection();
 
-	InputStream isDebug = getDebugResults(username,servicetype,framework);
-	InputStream isResult = 	getSimResults(username,servicetype,framework);
+	//InputStream isDebug = getDebugResults(username,servicetype,framework);
+	//InputStream isResult = 	getSimResults(username,servicetype,framework);
 		
 		 ResultSet results = null;
 	        try {
